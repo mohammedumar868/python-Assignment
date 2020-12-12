@@ -1,0 +1,156 @@
+STRING
+-------
+
+1) txt = "hello, and welcome to my world."
+
+x = txt.capitalize()
+
+print (x)
+
+2) txt = "banana"
+
+x = txt.center(40)
+
+print(x)
+
+3)txt = "Hello, welcome to my world."
+
+x = txt.find("welcome")
+
+print(x)
+
+4)txt = "For only {price:.2f} dollars!"
+print(txt.format(price = 49))
+
+5) txt = "THIS IS NOW!"
+
+x = txt.isupper()
+
+print(x)
+---------------------
+
+LIST
+-----
+1) fruits = ['apple', 'banana', 'cherry', 'orange']
+
+fruits.clear()
+
+2)fruits = ['apple', 'banana', 'cherry']
+fruits.append("orange")
+
+3)fruits = ['apple', 'banana', 'cherry', 'orange']
+
+x = fruits.copy()
+
+4)fruits = ['apple', 'banana', 'cherry']
+
+x = fruits.index("cherry")
+
+--------------------------------------------------
+
+DICTIONARY
+------------
+
+1)car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.copy()
+
+print(x)
+
+2)car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+car.update({"color": "White"})
+
+print(car)
+
+3)car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.values()
+
+print(x)
+
+
+---------------------------------------------------------------------
+3] use if else & elif to write the code on python for your report card
+
+
+sub1=int(input("Enter marks of the first subject: "))
+sub2=int(input("Enter marks of the second subject: "))
+sub3=int(input("Enter marks of the third subject: "))
+sub4=int(input("Enter marks of the fourth subject: "))
+sub5=int(input("Enter marks of the fifth subject: "))
+avg=(sub1+sub2+sub3+sub4+sub4)/5
+if(avg>=90):
+    print("Grade: A")
+elif(avg>=80&avg<90):
+    print("Grade: B")
+elif(avg>=70&avg<80):
+    print("Grade: C")
+elif(avg>=60&avg<70):
+    print("Grade: D")
+else:
+    print("Grade: F")
+
+
+---output---
+
+Enter marks of the first subject: 85
+Enter marks of the second subject: 95
+Enter marks of the third subject: 99
+Enter marks of the fourth subject: 93
+Enter marks of the fifth subject: 100
+Grade: A
+--------------------------------------------------------------------
+4]Python Program to Print all Prime Numbers between an Interval
+
+#Take the input from the user:   
+lower = int(input("Enter lower range: "))  
+upper = int(input("Enter upper range: "))  
+  
+for num in range(lower,upper + 1):  
+   if num > 1:  
+       for i in range(2,num):  
+           if (num % i) == 0:  
+               break  
+       else:  
+           print(num) 
+
+----------------------------------------------------------------------
+
+5]# Python Program to Print Multiplication Table of a Number
+
+num = int(input("Enter the number: "))
+
+print("Multiplication Table of", num)
+for i in range(1, 11):
+   print(num,"X",i,"=",num * i)
+
+
+
+-----------Output:
+
+Enter the number: 6
+Multiplication Table of 6
+6 X 1 = 6
+6 X 2 = 12
+6 X 3 = 18
+6 X 4 = 24
+6 X 5 = 30
+6 X 6 = 36
+6 X 7 = 42
+6 X 8 = 48
+6 X 9 = 54
+6 X 10 = 60
+
